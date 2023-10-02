@@ -1,7 +1,7 @@
 public class App {
     
     public static void main(String[] args) throws Exception {
-        
+        //Declaración de nodos
         Node raiz = new Node (0);
         Node b = new Node (1);
         Node c = new Node (2);
@@ -13,6 +13,7 @@ public class App {
         Node i = new Node (8);
         Node j = new Node (9);
 
+        //Posicion de nodos
         raiz.left = b;
         raiz.right = c;
         b.left = d;
@@ -24,7 +25,9 @@ public class App {
         g.right = j;
        
         ArbolBinario arbol = new ArbolBinario(raiz);
-        
+
+
+        //Recorridos 
         System.out.println("Recorrido en Preorden:");
         arbol.preorden(raiz);
 
